@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keb & con</title>
+
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = document.createElement("script"); r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(r, a); for (var n = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], o = 0; o < p.length; o++)heap[p[o]] = n(p[o]) };
+        heap.load("4227806034"); 
+    </script>
+
+    <link rel="icon" type="image/x-icon"
+        href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/sparkling-heart_1f496.png">
+
+
+    <style>
+        body {
+            font-family: helvetica;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .chat {
+            width: 300px;
+            border: solid 1px #EEE;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .messages {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message {
+            border-radius: 20px;
+            padding: 8px 15px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        .yours {
+            align-items: flex-start;
+        }
+
+        .yours .message {
+            margin-right: 25%;
+            background-color: #eee;
+            position: relative;
+        }
+
+        .yours .message.last:before {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+            left: -7px;
+            height: 20px;
+            width: 20px;
+            background: #eee;
+            border-bottom-right-radius: 15px;
+        }
+
+        .yours .message.last:after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: -10px;
+            width: 10px;
+            height: 20px;
+            background: white;
+            border-bottom-right-radius: 10px;
+        }
+
+        .mine {
+            align-items: flex-end;
+        }
+
+        .mine .message {
+            color: white;
+            margin-left: 25%;
+            background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .mine .message.last:before {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+            right: -8px;
+            height: 20px;
+            width: 20px;
+            background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
+            background-attachment: fixed;
+            border-bottom-left-radius: 15px;
+        }
+
+        .mine .message.last:after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            right: -10px;
+            width: 10px;
+            height: 20px;
+            background: white;
+            border-bottom-left-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="chat">
+        <div class="mine messages">
+            <div class="message last">
+                current fave feelsy song?
+            </div>
+        </div>
+
+
+        <div class="yours messages">
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/4BNqWebyipWrMsupuTmKO9?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+
+
+        <div class="mine messages">
+            <div class="message">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/2K8elWg8ihrZRwZJ7Gy6L3?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+            <div class="message">
+                ok next one - a song that’s heavily tied with good mems
+            </div>
+
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/6bpBsotzL05UzS1rHsIqk8?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+
+        <div class="yours messages">
+            <div class="message">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/3Y3wmxmyrBkKBGWXfEjIsM?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+
+            <div class="message last">
+                okay next one - current go to song when you need a pick-me-up
+            </div>
+        </div>
+
+
+
+        <div class="mine messages">
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/5fKBwqSTuCbnJlCOpeRa3o?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+        <div class="yours messages">
+            <div class="message">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/4A31dX3j2qcNIgipwRV0eS?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+
+            <div class="message">
+                ok what’s a really cute song
+            </div>
+
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/1boXOL0ua7N2iCOUVI1p9F?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+
+
+        <div class="mine messages">
+            <div class="message">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/4ZFHITy0bAeZ3oFfvR0HaI?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+
+            <div class="message">
+                next one - a hype song for working out
+            </div>
+
+            <div class="message last">
+                also going to pick this up tomorrow bc I am so sleepy lol
+            </div>
+        </div>
+
+
+        <div class="yours messages">
+
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/1QPb3sFVfZlcrSHp9skszO?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+
+        <div class="mine messages">
+
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/6KgtcmCF9Ky68XC7ezxl3s?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+
+        <div class="yours messages">
+
+            <div class="message">
+                a song when you’re focusing/doing housework
+            </div>
+
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/5w3CRkbTWXfbYepIdFpGUN?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+
+        <div class="mine messages">
+
+            <div class="message">
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="150" height="250"
+                    type="text/html"
+                    src="https://www.youtube.com/embed/VMAPTo7RVCo?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com">
+
+                </iframe>
+            </div>
+
+            <div class="message">
+                ok next - song that you were listening to right before Covid shut everything down
+            </div>
+
+            <div class="message">
+                think driving to work pre-covid
+            </div>
+
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/5X2ippHAj4GHuWfqQriqvF?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+        <div class="yours messages">
+
+
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/5Z3trOR982mBrJcPfrLUsq?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+
+        <div class="mine messages">
+            <div class="message last">
+                ok 3rd week of July 2018, go
+            </div>
+        </div>
+
+        <div class="yours messages">
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/07HYEJfLR6CrvKeLpfrA7r?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+        <div class="mine messages">
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/4C8gET0YDJU473cLC3rYIG?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+
+        <div class="yours messages">
+            <div class="message last">
+                okie next one - something you listened to a lot when going through something tough
+            </div>
+        </div>
+
+        <div class="mine messages">
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/2CPLGREl5ahzA2WPBMkpxh?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+
+        <div class="yours messages">
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/0yb9DKhu0xA0h0qvKOHVwu?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+        <div class="mine messages">
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/2e99VkUhB9ydNPYdfbNxCx?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+        <div class="yours messages">
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/6trZBfGagQQeI97yJQuq4c?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+
+        <div class="mine messages">
+            <div class="message">
+                love talking to a fellow emotional oversharer in the best way🥲🥲
+            </div>
+
+            <div class="message ">
+                hmm next - a song that makes you think of night drives
+            </div>
+
+            <div class="message">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/1PW0MH1EwqC09G0OnnjnT4?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/2bjZY6qnQWOLpS0n1TtrbM?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+        <div class="yours messages">
+
+            <div class="message">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/07jeqq0AE7d6wOSqR92vOD?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+
+            <div class="message last">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/0wP9okoDWmbeC2w9E8ZzPu?utm_source=generator" width="150"
+                    height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+</body>
+
+</html>
